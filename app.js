@@ -1,41 +1,5 @@
-// const url="https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita"
 
-// const fetching= async()=>{
-//     let response = await fetch(url);
-//     console.log(response);
-//      let data= await response.json();
-//      console.log(data)
-//      const Drinks=document.getElementById("drinks")
-//           Drinks.innerText=data.drinks.map(drink => drink.strDrink).join(", ");
-          
-
-// }
-// fetching();
-
-
-
-// const url="https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita";
- 
-// async function fetching(){
-  
-//       console.log("fetching data ....")
-//         let response= await fetch(url,post);
-//         console.log(response)
-
-//         const data=response.json();
-//         console.log(data);
-//         const Drinks=document.getElementById("drinks")
-//         Drinks.innerText=data.map(drink=>
-//             drink.strDrink
-// )
-   
-
-// }
-
-// fetching();
-
-
-const url="https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single"
+const url="https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,sexist,explicit&type=single"
 
 let btn=document.getElementById("btn")
  async function getjoke(){
