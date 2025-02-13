@@ -1,0 +1,102 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:  #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.container {
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    height: 350px;  
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Header Styling */
+header {
+    margin-bottom: 30px; 
+}
+
+
+header h1 {
+    font-size: 1.8em;
+    color:#6a5acd;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+
+#jokes {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 30px; 
+    line-height: 1.5;
+    flex-grow: 1; 
+    overflow-y: auto; 
+    
+    background-color: #fff3e6; 
+    border-radius: 8px; 
+    padding: 15px; 
+    border: 1px solid #ccc; 
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    #jokes {
+        font-size: 1em;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header p {
+        font-size: 1.1em;
+    }
+}
